@@ -1,13 +1,19 @@
 ---
 title: "TimeSeries_AirPassengers"
 output:
-  pdf_document: default
-
+  pdf_document:
+    latex_engine: xelatex
 ---
 
 
 
 ```{r}
+## Main Source and inspiration == http://www.maths.adelaide.edu.au/emac2009/
+#Introductory Time Series with R
+#by Paul S.P. Cowpertwait and Andrew Viggo Metcalfe
+#Springer. ISBN: 978-0-387-88697-8
+# All Text below within the QUOTE and UNQUOTE blocks is from this SPRINGER text mentioned above 
+
 library(ggfortify)
 library(tseries)
 library(forecast)
@@ -21,22 +27,43 @@ sum(is.na(ts_AirPassengers)) # No Missing values - No NA
 
 ```
 
+Check Frequency of TimeSeries and the Cyclic part of the TS  
+Check the summary of TS data  
+Plot Raw TimeSeries using the inbuilt base PLOT  
+...  
+    ...  
+    
+
 ```{r}
-# Check Frequency of TimeSeries and the Cyclic part of the TS 
+
 frequency(ts_AirPassengers);cycle(ts_AirPassengers)
-# Check the summary of TS data 
+
 summary(ts_AirPassengers)
-# Plot Raw TimeSeries using the inbuilt base PLOT 
-plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",main=("data(AirPassengers) Raw Data TimeSries Plot"))
+
+plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",
+     main=("data(AirPassengers) Raw Data TimeSries Plot"))
 ```
 
+#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC 
+#is known as a TREND -- UNQUOTE
+
 ```{r}
-boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,main ="Seasonality Plot - Air Passengers ")
+#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC 
+#is known as a TREND -- UNQUOTE
+```
+
+
+```{r}
 #Seasonality Plot − Air Passengers
+
+boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,
+        main ="Seasonality Plot - Air Passengers ")
+
 ```
 
 
 ```{r}
+
 
 ```
 
