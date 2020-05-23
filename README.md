@@ -1,2 +1,2 @@
-# FinTimeSeries
-Towards a Financial domain focused TimeSeries
+# TimeSeries_May20
+TimeSeries_May20

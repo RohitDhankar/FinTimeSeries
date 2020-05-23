@@ -1,0 +1,104 @@
+$ sudo apt install r-cran-curl
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-wine gir1.2-geocodeglib-1.0 libavdevice57 libfwup1 libllvm8 libllvm8:i386 liblo7 libmxml-bin libmxml-dev libmxml1
+  libwine:i386 linux-headers-5.3.0-46 linux-headers-5.3.0-46-generic linux-image-5.3.0-46-generic linux-modules-5.3.0-46-generic
+  linux-modules-extra-5.3.0-46-generic ubuntu-web-launchers wine32:i386
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  r-cran-testthat r-cran-knitr r-cran-jsonlite r-cran-magrittr r-cran-httpuv
+The following NEW packages will be installed:
+  r-cran-curl
+0 upgraded, 1 newly installed, 0 to remove and 72 not upgraded.
+Need to get 341 kB of archives.
+After this operation, 1,112 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 r-cran-curl amd64 3.1-2 [341 kB]
+Fetched 341 kB in 1s (290 kB/s)     
+Selecting previously unselected package r-cran-curl.
+(Reading database ... 262011 files and directories currently installed.)
+Preparing to unpack .../r-cran-curl_3.1-2_amd64.deb ...
+Unpacking r-cran-curl (3.1-2) ...
+> install.packages("tseries")
+Installing package into ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘TTR’, ‘quantmod’
+
+trying URL 'https://cloud.r-project.org/src/contrib/TTR_0.23-6.tar.gz'
+Content type 'application/x-gzip' length 309148 bytes (301 KB)
+==================================================
+downloaded 301 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/quantmod_0.4.17.tar.gz'
+Content type 'application/x-gzip' length 152204 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/tseries_0.10-47.tar.gz'
+Content type 'application/x-gzip' length 164796 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+* installing *source* package ‘TTR’ ...
+** package ‘TTR’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c adjRatios.c -o adjRatios.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c aroon.c -o aroon.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c moving_averages.c -o moving_averages.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c percent_rank.c -o percent_rank.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c runfun.c -o runfun.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sar.c -o sar.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c wilderSum.c -o wilderSum.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG  -I"/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/xts/include"    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c zigzag.c -o zigzag.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TTR.so adjRatios.o aroon.o init.o moving_averages.o percent_rank.o runfun.o sar.o wilderSum.o zigzag.o -L/usr/lib/R/lib -lR
+installing to /home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/TTR/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (TTR)
+* installing *source* package ‘quantmod’ ...
+** package ‘quantmod’ successfully unpacked and MD5 sums checked
+** R
+** demo
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (quantmod)
+* installing *source* package ‘tseries’ ...
+** package ‘tseries’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c arma.c -o arma.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bdstest.c -o bdstest.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c boot.c -o boot.o
+gfortran  -fpic -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong  -c  cfuncs.f95 -o cfuncs.o
+gfortran   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong  -c dsumsl.f -o dsumsl.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c formats.c -o formats.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c garch.c -o garch.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ppsum.c -o ppsum.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-AitvI6/r-base-3.4.4=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tsutils.c -o tsutils.o
+gfortran -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o tseries.so arma.o bdstest.o boot.o cfuncs.o dsumsl.o formats.o garch.o init.o ppsum.o tsutils.o -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/tseries/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (tseries)
+
+The downloaded source packages are in
+	‘/tmp/RtmpcwuL2f/downloaded_packages’
+
+
