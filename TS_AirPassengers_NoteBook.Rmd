@@ -44,24 +44,53 @@ plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",
      main=("data(AirPassengers) Raw Data TimeSries Plot"))
 ```
 
-#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC 
-#is known as a TREND -- UNQUOTE
+#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC  
+is known as a TREND -- UNQUOTE
 
 ```{r}
-#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC 
-#is known as a TREND -- UNQUOTE
+
 ```
 
 
+Seasonality Plot − Air Passengers  
+
 ```{r}
-#Seasonality Plot − Air Passengers
+
 
 boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,
         main ="Seasonality Plot - Air Passengers ")
 
 ```
 
-
+A repeating pattern within each year is known as a - Seasonal Variation , or seasonality .   
+This is true even if the period is not a year - seasonality can be within a time span of a month also.   
+   
+   QUOTE - Random or stochastic trends are common in Financial TimeSeries -    
+   thus Regression model is not appropriate for Fin TS . Further forecating is based   
+   on extrapolation (assumption that existing trends will continue )   
+   Also in absence of external shock - the linear trend can be easily extrapolated.  
+   Outliers are to be managed - robust methods of fitting models and imputation  
+   of missing values may be used .- UNQUOTE       
+   
+   
+     
+     
+     For imputation refer here = https://www.kaggle.com/rohitdhankar/multiple-imputation-of-missing-values   
+     Package MICE - Multiple Imputation with MCA  
+       Source URL's http://juliejosse.com/wp-content/uploads/2016/06/user2016.pdf  
+       https://arxiv.org/pdf/1606.05333v2.pdf  
+       
+http://www.ats.ucla.edu/stat/r/faq/R_pmm_mi.htm
+     
+     
+       
+       
+      
+      
+   
+   
+   
+   
 ```{r}
 
 
