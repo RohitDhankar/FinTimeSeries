@@ -1,0 +1,204 @@
+########## Foo_Bar_Error---- 
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 115.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<test_files/figure-latex/unnamed-chunk-2-1.pdf, id=14, 469.755pt x 325.215pt>
+File: test_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use test_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: test_files/figure-latex/unnamed-chunk-2-1.pdf  used on
+ input line 215.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<test_files/figure-latex/unnamed-chunk-3-1.pdf, id=15, 469.755pt x 325.215pt>
+File: test_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use test_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: test_files/figure-latex/unnamed-chunk-3-1.pdf  used on
+ input line 223.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[2 <./test_files/figure-latex/unnamed-chunk-2-1.pdf>]
+
+! Package inputenc Error: Unicode char − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...Tok{#Seasonality Plot − Air Passengers}
+                                                   
+Here is how much of TeX's memory you used:
+ 12666 strings out of 494923
+ 183548 string characters out of 6180742
+ 286861 words of memory out of 5000000
+ 15809 multiletter control sequences out of 15000+600000
+ 27307 words of font info for 45 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 32i,5n,38p,353b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
+
+
+
+########## Foo_Bar_Error---- 
+
+$ sudo apt install texlive-xetex
+[sudo] password for dhankar: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-wine gir1.2-geocodeglib-1.0 libavdevice57 libfwup1 libllvm8 libllvm8:i386 liblo7 libmxml-bin libmxml-dev libmxml1
+  libwine:i386 ubuntu-web-launchers wine32:i386
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  texlive-xetex
+0 upgraded, 1 newly installed, 0 to remove and 72 not upgraded.
+Need to get 10.7 MB of archives.
+After this operation, 21.4 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 texlive-xetex all 2017.20180305-1 [10.7 MB]
+Fetched 10.7 MB in 0s (25.3 MB/s)      
+Selecting previously unselected package texlive-xetex.
+(Reading database ... 250507 files and directories currently installed.)
+Preparing to unpack .../texlive-xetex_2017.20180305-1_all.deb ...
+Unpacking texlive-xetex (2017.20180305-1) ...
+Setting up texlive-xetex (2017.20180305-1) ...
+Processing triggers for tex-common (6.09) ...
+Running mktexlsr. This may take some time... done.
+Building format(s) --all.
+	This may take some time... done.
+
+
+
+
+########## Foo_Bar_Error---- 
+
+> install.packages("RCurl")
+Installing package into ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/RCurl_1.98-1.2.tar.gz'
+Content type 'application/x-gzip' length 699583 bytes (683 KB)
+==================================================
+downloaded 683 KB
+
+* installing *source* package ‘RCurl’ ...
+** package ‘RCurl’ successfully unpacked and MD5 sums checked
+checking for curl-config... no
+Cannot find curl-config
+ERROR: configuration failed for package ‘RCurl’
+* removing ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/RCurl’
+Warning in install.packages :
+  installation of package ‘RCurl’ had non-zero exit status
+
+The downloaded source packages are in
+	‘/tmp/RtmpQwzyGw/downloaded_packages’
+> install.packages("openssl")
+Installing package into ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/openssl_1.4.1.tar.gz'
+Content type 'application/x-gzip' length 1206885 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘openssl’ ...
+** package ‘openssl’ successfully unpacked and MD5 sums checked
+Using PKG_CFLAGS=
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because openssl was not found. Try installing:
+ * deb: libssl-dev (Debian, Ubuntu, etc)
+ * rpm: openssl-devel (Fedora, CentOS, RHEL)
+ * csw: libssl_dev (Solaris)
+ * brew: openssl@1.1 (Mac OSX)
+If openssl is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a openssl.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘openssl’
+* removing ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/openssl’
+Warning in install.packages :
+  installation of package ‘openssl’ had non-zero exit status
+
+The downloaded source packages are in
+	‘/tmp/RtmpQwzyGw/downloaded_packages’
+> install.packages("rsconnect")
+Installing package into ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+also installing the dependency ‘openssl’
+
+trying URL 'https://cloud.r-project.org/src/contrib/openssl_1.4.1.tar.gz'
+Content type 'application/x-gzip' length 1206885 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rsconnect_0.8.16.tar.gz'
+Content type 'application/x-gzip' length 379757 bytes (370 KB)
+==================================================
+downloaded 370 KB
+
+* installing *source* package ‘openssl’ ...
+** package ‘openssl’ successfully unpacked and MD5 sums checked
+Using PKG_CFLAGS=
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because openssl was not found. Try installing:
+ * deb: libssl-dev (Debian, Ubuntu, etc)
+ * rpm: openssl-devel (Fedora, CentOS, RHEL)
+ * csw: libssl_dev (Solaris)
+ * brew: openssl@1.1 (Mac OSX)
+If openssl is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a openssl.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘openssl’
+* removing ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/openssl’
+Warning in install.packages :
+  installation of package ‘openssl’ had non-zero exit status
+ERROR: dependency ‘openssl’ is not available for package ‘rsconnect’
+* removing ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4/rsconnect’
+Warning in install.packages :
+  installation of package ‘rsconnect’ had non-zero exit status
+
+The downloaded source packages are in
+	‘/tmp/RtmpQwzyGw/downloaded_packages’
+> install.packages("curl-config")
+Installing package into ‘/home/dhankar/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+Warning in install.packages :
+  package ‘curl-config’ is not available (for R version 3.4.4)
+
+########## Foo_Bar_Error---- 
+
+(base) dhankar@dhankar-1:~/_dc_all/ts20/TimeSeries_May20$ sudo apt-get install libcurl4-openssl-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr fonts-wine gir1.2-geocodeglib-1.0 libavdevice57 libfwup1 libllvm8 libllvm8:i386 liblo7 libmxml-bin libmxml-dev libmxml1
+  libwine:i386 ubuntu-web-launchers wine32:i386
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  libcurl4-doc libidn11-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev libssl-dev
+The following NEW packages will be installed:
+  libcurl4-openssl-dev
+0 upgraded, 1 newly installed, 0 to remove and 80 not upgraded.
+Need to get 294 kB of archives.
+After this operation, 1,399 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcurl4-openssl-dev amd64 7.58.0-2ubuntu3.8 [294 kB]
+Fetched 294 kB in 2s (142 kB/s)          
+Selecting previously unselected package libcurl4-openssl-dev:amd64.
+(Reading database ... 251004 files and directories currently installed.)
+Preparing to unpack .../libcurl4-openssl-dev_7.58.0-2ubuntu3.8_amd64.deb ...
+Unpacking libcurl4-openssl-dev:amd64 (7.58.0-2ubuntu3.8) ...
+Setting up libcurl4-openssl-dev:amd64 (7.58.0-2ubuntu3.8) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+(base) dhankar@dhankar-1:~/_dc_all/ts20/TimeSeries_May20$ 
+(base) dhankar@dhankar-1:~/_dc_all/ts20/TimeSeries_May20$ 
+
+########## Foo_Bar_Error---- 
+
+

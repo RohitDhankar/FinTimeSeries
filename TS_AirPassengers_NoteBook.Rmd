@@ -1,25 +1,21 @@
 ---
 title: "TimeSeries_AirPassengers"
+author: "RohitDhankar"
 output:
-  pdf_document:
-    latex_engine: xelatex
+  html_document: default
+  pdf_document: default
+
 ---
 
 
 
 ```{r}
-## Main Source and inspiration == http://www.maths.adelaide.edu.au/emac2009/
-#Introductory Time Series with R
-#by Paul S.P. Cowpertwait and Andrew Viggo Metcalfe
-#Springer. ISBN: 978-0-387-88697-8
-# All Text below within the QUOTE and UNQUOTE blocks is from this SPRINGER text mentioned above 
-
 library(ggfortify)
 library(tseries)
 library(forecast)
 data(AirPassengers)
 ts_AirPassengers <- AirPassengers
-class(ts_AirPassengers);head(ts_AirPassengers);tail(ts_AirPassengers);dim(ts_AirPassengers)
+class(ts_AirPassengers);head(ts_AirPassengers);tail(ts_AirPassengers);dim(ts_AirPassengers);View(ts_AirPassengers)
 # Dimensions = NULL ??
 # Check for Missing or NA 
 sum(is.na(ts_AirPassengers)) # No Missing values - No NA 
@@ -27,70 +23,21 @@ sum(is.na(ts_AirPassengers)) # No Missing values - No NA
 
 ```
 
-Check Frequency of TimeSeries and the Cyclic part of the TS  
-Check the summary of TS data  
-Plot Raw TimeSeries using the inbuilt base PLOT  
-...  
-    ...  
-    
-
 ```{r}
-
+# Check Frequency of TimeSeries and the Cyclic part of the TS 
 frequency(ts_AirPassengers);cycle(ts_AirPassengers)
-
+# Check the summary of TS data 
 summary(ts_AirPassengers)
-
-plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",
-     main=("data(AirPassengers) Raw Data TimeSries Plot"))
+# Plot Raw TimeSeries using the inbuilt base PLOT 
+plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",main=("data(AirPassengers) Raw Data TimeSries Plot"))
 ```
-
-#QUOTE -- A systematic change in a time series that does not apppear to be PERIODIC  
-is known as a TREND -- UNQUOTE
 
 ```{r}
-
+boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,main ="Seasonality Plot - Air Passengers ")
+#Seasonality Plot − Air Passengers
 ```
 
 
-Seasonality Plot − Air Passengers  
-
-```{r}
-
-
-boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,
-        main ="Seasonality Plot - Air Passengers ")
-
-```
-
-A repeating pattern within each year is known as a - Seasonal Variation , or seasonality .   
-This is true even if the period is not a year - seasonality can be within a time span of a month also.   
-   
-   QUOTE - Random or stochastic trends are common in Financial TimeSeries -    
-   thus Regression model is not appropriate for Fin TS . Further forecating is based   
-   on extrapolation (assumption that existing trends will continue )   
-   Also in absence of external shock - the linear trend can be easily extrapolated.  
-   Outliers are to be managed - robust methods of fitting models and imputation  
-   of missing values may be used .- UNQUOTE       
-   
-   
-     
-     
-     For imputation refer here = https://www.kaggle.com/rohitdhankar/multiple-imputation-of-missing-values   
-     Package MICE - Multiple Imputation with MCA  
-       Source URL's http://juliejosse.com/wp-content/uploads/2016/06/user2016.pdf  
-       https://arxiv.org/pdf/1606.05333v2.pdf  
-       
-http://www.ats.ucla.edu/stat/r/faq/R_pmm_mi.htm
-     
-     
-       
-       
-      
-      
-   
-   
-   
-   
 ```{r}
 
 

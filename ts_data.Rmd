@@ -1,0 +1,51 @@
+---
+title: "ts_data"
+author: "RohitDhankar"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+
+```{r}
+library(ggfortify)
+library(tseries)
+library(forecast)
+library(readr)
+library(ggplot2)
+ts_data <- read_csv("ts_ga.csv")
+attach(ts_data);View(ts_data);names(ts_data);head(ts_data)
+#Change Column Names - Index and Daily_Users
+colnames(ts_data) <- c("Index", "Daily_Users")
+ts_only <- subset(ts_data, select = c(Daily_Users))
+class(ts_data);head(ts_data);tail(ts_data);dim(ts_data) # 209   2
+# Dimensions =  209   2
+class(ts_only);head(ts_only);tail(ts_only);dim(ts_only) # 209   1
+# Check for Missing or NA 
+sum(is.na(ts_only)) # 0 = Thus No Missing values - No NA 
+# 
+
+```
+
+```{r}
+# Check Frequency of TimeSeries and the Cyclic part of the TS 
+#frequency(ts_data);cycle(ts_data)
+# Check the summary of TS data 
+#summary(ts_AirPassengers)
+# Plot Raw TimeSeries using the inbuilt base PLOT 
+#plot(ts_AirPassengers,xlab="Months", ylab = "Air Passengers RAW Data",main=("data(AirPassengers) Raw Data TimeSries Plot"))
+```
+
+```{r}
+#boxplot(ts_AirPassengers~cycle(ts_AirPassengers),xlab="Months", ylab = "Air Passengers Count " ,main ="Seasonality Plot - Air Passengers ")
+#Seasonality Plot − Air Passengers
+```
+
+
+```{r}
+
+
+
+```
+
