@@ -1,0 +1,42 @@
+# TimeSeries Data taken from the Site -- 
+http://mason.gmu.edu/~jgentle/books/statfinbk/statfindata.htm
+# Thanks to Prof . James E. Gentle and Yahoo Finance , the prof states that the datasets are from Yahoo Finance 
+# "Most of these datasets were downloaded from Yahoo Finance." 
+
+
+Statistical Analysis of Financial Data
+by James E. Gentle
+Datasets
+Here are some datasets that were used in various places in SAFD.
+
+The adjusted closing prices listed in these datasets are not current. They are the adjusted prices as of the date when the data were downloaded.
+
+Most of these datasets were downloaded from Yahoo Finance.
+
+    Intel Corporation; daily OHLC, first 3 quarters, 2017 INTCd20173Q.csv
+    Intel Corporation; daily OHLC, 1987 through 2017 INTCd.csv
+    S&P 500; daily OHLC, 1987 through 2017 GSPCd.csv
+    S&P 500; daily OHLC, 1990 through 2017 GSPCd1990.csv
+    S&P 500 Total Return; daily OHLC, 1988 through 2017 SP500TR.csv
+    Dow Jones Industrial Average; daily OHLC, 1987 through 2017 DJId.csv
+    Nasdaq Composite daily daily OHLC, 1987 through 2017 IXICd.csv
+    VIX daily closes, 1990 through 2017 VIXd.csv
+    SKEW daily closes, 1990 through 2017 SKEWd.csv 
+
+A CSV dataset can be read directly into an R data frame by a statement of the form
+
+url <- "http://mason.gmu.edu/~jgentle/books/statfinbk/Data/INTCd20173Q.csv"
+INTC20173Q <- read.csv(url, header=TRUE, stringsAsFactors=FALSE)
+
+Here are some other files that may be of interest.
+
+    List of stock symbols of DJIA as of year-end 2017 (DWDP changed retroactively to DOW) DJIA2017.txt
+    List of stock symbols of DJIA as of year-end 201 DJIA2018.txt 
+
+R Code
+Here is some sample R code used in SAFD.
+
+    Chapter 1
+    Chapter 1 Appendix 
+
+
